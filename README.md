@@ -1,7 +1,7 @@
 # news-recommender-system
 
 ## Objective: 
-                To build a news recommender system
+                *To build a news recommender system*
 ## Abstract: 
   The world is getting digitalizing and that creates so much data (products, articles, or any other objects) and opportunities. It is hard to find what we want. This is the place where Recommender systems are useful. It sorts the items in a manner that based on one or more user’s interaction and interests typically depends upon the type of recommender system. In this project, we build we used hybrid recommender systems in combination with content-based and memory-based collaborative filtering. In memory-based, we created manually a dataset that consists of the user interactions on the news articles. We also used the popularity model. 
  
