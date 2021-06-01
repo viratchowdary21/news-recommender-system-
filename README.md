@@ -8,6 +8,8 @@
 ## Implementation: what we did in the project: -
 ###  Dataset: 
   In our project there are two datasets. one primary, which consists of a news article data that is scrapped from various internet news websites and another secondary dataset that consists of user interaction and ratings or reviews (categorical). At first, we thought of summarizing the news article text data and we did nicely but luckily, we scraped the data from in Inshortly and labelled it as description. To avoid the cold start problem, we manually created a secondary user interaction dataset that represents what the articles read by user and we made a categorical label called event strength which indicates one value float value for each categorical value as in the below.
+  
+  
 ### Recommender system:
   There is a column labelled as ‘contentid' which is common in both the datasets and relates to each other. We created a user rating system. Here we manually given some rating based on the view, like, bookmark or comment label to each article from the user who interacted with it and then we aggregate all the interactions the user has performed in an article by a weighted sum of interaction type strength and apply a log transformation to smooth the distribution. Like this we normalize the rating so that we can minimize the bias. 
   
@@ -33,6 +35,9 @@
 ## Evaluation:
    For evaluation we are using recall as the evaluator to evaluate the user-article interaction and user-user similarity. The recall is used to measure the no. of hits that an article is a probability that how much an article is likely to be recommended. We have evaluated for each recommender model with recall that measure which model is better. We chose to work with Top-N accuracy metrics, which evaluates the accuracy of the top recommendations provided to a user, comparing to the items the user has interacted with within the test set. 
   
+  ![image](https://user-images.githubusercontent.com/64622055/120254183-e1961080-c2a6-11eb-945a-a290e1c43380.png)
+
+    
 ## Interface: 
   Here is the interface wex created with flask.
   
